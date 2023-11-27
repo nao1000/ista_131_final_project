@@ -63,8 +63,9 @@ def ChampionsERA_OPS():
     explode = [0.1,0,0,0,0]
     angle = 45 * perc[0]
     wedges, *_ = ax1.pie(perc,startangle =angle ,labels=label,explode=explode, autopct='%1.1f%%',
-                         textprops={'fontsize': 14})
+                         textprops={'fontsize': 10})
 
+    ax1.set_title("World Series Winner Distribution Based on ERA and OPS Rankings", fontsize=12)
     ## overall rankings I made as the average of the OPS and ERA rank
     overall_dict = {"Top 3": 0, "Top 4 to 7" : 0, "Top 8 to 10": 0}
     for team in withinteams:
@@ -90,7 +91,7 @@ def ChampionsERA_OPS():
                      alpha=0.1 + 0.25 * j)
         ax2.bar_label(bc, labels=[f"{height:.0%}"], label_type='center')
 
-    ax2.set_title('Overall Ranking of "Balanced" World Series Winners')
+    ax2.set_title('Overall Ranking of "Balanced" World Series Winners', fontsize=10)
     ax2.legend()
     ax2.axis('off')
     ax2.set_xlim(- 2.5 * width, 2.5 * width)
