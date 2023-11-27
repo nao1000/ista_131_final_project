@@ -9,3 +9,10 @@ I had originally wanted to use data from Baseball Reference but the datasets wer
 
 Everything else should be fine. When running the DisplayFigures.py (which shows all of the figures at once), please look at them in fullscreen.
 It was my intention to have them in full-screen and they look best there. 
+
+
+yearlyPitchingTotals(BR).txt 
+copy and pasted from https://www.baseball-reference.com/leagues/majors/pitch.shtml#all_teams_standard_pitching_totals
+
+yearlyBattingTotals(BR).txt
+copy and pasted https://www.baseball-reference.com/leagues/majors/bat.shtml
