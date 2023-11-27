@@ -62,7 +62,8 @@ def ChampionsERA_OPS():
     fig.subplots_adjust(wspace=0)
     explode = [0.1,0,0,0,0]
     angle = 45 * perc[0]
-    wedges, *_ = ax1.pie(perc,startangle =angle ,labels=label,explode=explode, autopct='%1.1f%%')
+    wedges, *_ = ax1.pie(perc,startangle =angle ,labels=label,explode=explode, autopct='%1.1f%%',
+                         textprops={'fontsize': 14})
 
     ## overall rankings I made as the average of the OPS and ERA rank
     overall_dict = {"Top 3": 0, "Top 4 to 7" : 0, "Top 8 to 10": 0}
